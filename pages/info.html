@@ -5,706 +5,294 @@
   <title>Info - MARI PLACE</title>
   <meta name="robots" content="noindex, nofollow">
   <style>
-<meta charset="UTF-8">
-<title>Info - MARI PLACE</title>
-<meta name="robots" content="noindex, nofollow">
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      color: white;
+      font-family: Inter, sans-serif;
+      overflow: auto;
+    }
 
+    * {
+      box-sizing: border-box;
+    }
 
-html, body{
-  margin:0;
-  width:100%;
-  height:100%;
-  background: transparent;
-  color: white;
-  font-family:Inter,sans-serif;
-  overflow:auto;
-}
-    
-margin:0;
-width:100%;
-height:100%;
-background: transparent;
-color: white;
-font-family:Inter,sans-serif;
-overflow:auto;
-}
+    .container {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
 
-* {
-  box-sizing: border-box;
-box-sizing: border-box;
-}
+    #main {
+      width: min(800px, 92vw);
+      max-height: 90vh;
+      overflow: auto;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid #444;
+      border-radius: 8px;
+      backdrop-filter: blur(8px);
+      padding: clamp(16px, 4vw, 30px);
+      text-align: center;
+    }
 
-.container{
-  position:relative;
-  z-index:1;
-  height:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:20px;
-position:relative;
-z-index:1;
-height:100%;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:20px;
-}
+    h1 {
+      text-align: center;
+      font-family: 'Sora', sans-serif;
+      background: linear-gradient(
+        115deg,
+        #4a4a4a 0%,
+        #ffffff 10%,
+        #7a7a7a 18%,
+        #f5f5f5 25%,
+        #8c8c8c 32%,
+        #ffffff 40%,
+        #5e5e5e 50%,
+        #ffffff 60%,
+        #9a9a9a 68%,
+        #f0f0f0 76%,
+        #6e6e6e 85%,
+        #ffffff 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 300% auto;
+      animation: chrome 20s ease-in-out infinite alternate;
+    }
 
-#main {
-  width: min(800px, 92vw);
-  max-height: 90vh;
-  overflow: auto;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid #444;
-  border-radius: 8px;
-  backdrop-filter: blur(8px);
-  padding: clamp(16px, 4vw, 30px);
-  text-align: center;
-width: min(800px, 92vw);
-max-height: 90vh;
-overflow: auto;
-background: rgba(255,255,255,0.06);
-border: 1px solid #444;
-border-radius: 8px;
-backdrop-filter: blur(8px);
-padding: clamp(16px, 4vw, 30px);
-text-align: center;
-}
-
-h1{
-  text-align:center;
-  font-family:'Sora',sans-serif;
-
-  background:
-    linear-gradient(
-      115deg,
-      #4a4a4a 0%,
-      #ffffff 10%,
-      #7a7a7a 18%,
-      #f5f5f5 25%,
-      #8c8c8c 32%,
-      #ffffff 40%,
-      #5e5e5e 50%,
-      #ffffff 60%,
-      #9a9a9a 68%,
-      #f0f0f0 76%,
-      #6e6e6e 85%,
-      #ffffff 100%
-    );
-
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  background-size:300% auto;
-  animation:chrome 20s ease-in-out infinite alternate;
-text-align:center;
-font-family:'Sora',sans-serif;
-
-background:
-linear-gradient(
-115deg,
-#4a4a4a 0%,
-#ffffff 10%,
-#7a7a7a 18%,
-#f5f5f5 25%,
-#8c8c8c 32%,
-#ffffff 40%,
-#5e5e5e 50%,
-#ffffff 60%,
-#9a9a9a 68%,
-#f0f0f0 76%,
-#6e6e6e 85%,
-#ffffff 100%
-);
-
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-background-size:300% auto;
-animation:chrome 20s ease-in-out infinite alternate;
-}
-
-@keyframes chrome{
-  from{background-position:0% 50%;}
-  to{background-position:100% 50%;}
-from{background-position:0% 50%;}
-to{background-position:100% 50%;}
-}
-
-.center {
-text-align: center;
-}
+    @keyframes chrome {
+      from { background-position: 0% 50%; }
+      to { background-position: 100% 50%; }
+    }
 
     .center {
       text-align: center;
     }
-.left {
-text-align: left !important;
-}
-
-a {
-color: whitesmoke;
-}
 
     .left {
       text-align: left !important;
     }
-    
-    a {
-      color: whitesmoke;
-    }
+
     img {
       margin: 15px;
     }
-img {
-margin: 15px;
-}
 
-    div[align="center"] {
-    text-align: left !important;
-div[align="center"] {
-text-align: left !important;
-}
-
-div[style*="text-align:center"] {
-    text-align: left !important;
-text-align: left !important;
-}
-
-.hide {
-color: transparent;
-}
-
-
-/* =========================
-PROXIES BUTTON
-========================= */
-
-#proxiesButton {
-position: fixed;
-bottom: 15px;
-left: 15px;
-z-index: 99999;
-
-background: rgba(20,20,20,0.85);
-color: white;
-
-border: 1px solid #555;
-border-radius: 7px;
-
-padding: 8px 12px;
-
-font-family: Arial, sans-serif;
-font-size: 12px;
-cursor: pointer;
-
-transition: 0.2s;
-}
-
-#proxiesButton:hover {
-background: rgba(60,60,60,0.95);
-}
-
-
-/* =========================
-PROXIES MENU
-========================= */
-
-#proxiesMenu {
-display: none;
-
-position: fixed;
-bottom: 55px;
-left: 15px;
-
-width: 300px;
-max-width: calc(100vw - 30px);
-
-z-index: 99998;
-
-background: rgba(20,20,20,0.96);
-border: 1px solid #555;
-border-radius: 10px;
-
-padding: 15px;
-
-backdrop-filter: blur(10px);
-
-box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-}
-
-#proxiesMenu h3 {
-margin: 0 0 12px 0;
-font-family: 'Sora', sans-serif;
-color: white;
-}
-
-.proxyLink {
-display: block;
-
-padding: 9px 10px;
-margin: 6px 0;
-
-background: rgba(255,255,255,0.08);
-
-border-radius: 6px;
-
-color: white !important;
-text-decoration: none;
-
-font-size: 13px;
-
-transition: 0.2s;
-}
-
-.proxyLink:hover {
-background: rgba(255,255,255,0.17);
-}
-
-#closeProxies {
-width: 100%;
-margin-top: 8px;
-
-padding: 7px;
-
-background: transparent;
-color: #aaa;
-
-border: 1px solid #444;
-border-radius: 6px;
-
-cursor: pointer;
-}
+    div[align="center"], div[style*="text-align:center"] {
+      text-align: left !important;
+    }
 
     .hide {
       color: transparent;
     }
-  </style>
-#closeProxies:hover {
-color: white;
-border-color: #777;
-}
 
-</style>
+    /* Mini Search Bar Styles */
+    .search-container {
+      margin: 20px 0;
+      display: flex;
+      gap: 10px;
+    }
+
+    .search-input {
+      flex: 1;
+      padding: 10px 14px;
+      border-radius: 6px;
+      border: 1px solid #555;
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .search-input:focus {
+      border-color: #888;
+    }
+
+    .search-btn {
+      padding: 10px 18px;
+      border-radius: 6px;
+      border: 1px solid #555;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      cursor: pointer;
+      font-family: 'Sora', sans-serif;
+      transition: 0.2s;
+    }
+
+    .search-btn:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    /* Non-clickable copy text styles */
+    .copyable-link {
+      display: block;
+      padding: 8px;
+      margin: 4px 0;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px dashed #555;
+      border-radius: 4px;
+      color: #ddd;
+      font-family: monospace;
+      font-size: 13px;
+      user-select: all;
+      word-break: break-all;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container">
+    <div id="main">
+      <h1>MARI PLACE</h1>
+      <h2>V.3.<span class="games"></span>.B.⁰</h2>
 
-<div class="container">
-<div id="main">
-  <h1>MARI PLACE</h1>
-  <h2>V.3.<span class="games"></span>.B.⁰</h2>
-
-<h1>MARI PLACE</h1>
-<h2>V.3.<span class="games"></span>.B.⁰</h2>
-
-<hr>
-  <h3>Version Info</h3>
-  <p class="left">
-    
-
-<h3>Version Info</h3>
-
-<p class="left">
-VERSION: 3 <br>
-GAMES: <span class="games">N/A</span><br>
-UPDATE: Beta <br>
-SUB-UPDATE: 0
-  </p>
-</p>
-
-<script>
-fetch("/games.json")
-  .then(res => res.json())
-  .then(games => {
-    document.querySelectorAll(".games").forEach(el => {
-      el.textContent = games.length;
-    });
-  });
-.then(res => res.json())
-.then(games => {
-document.querySelectorAll(".games").forEach(el => {
-el.textContent = games.length;
-});
-});
-</script>
-  
-  <hr>
-
-    <h3>Site Info</h3>
-  <p class="left">
-    
-    Current Domain: <span id="domain"></span> <br>
-    Username: <span id="username">login in chat</span> <br>
-    Local storage:
-  <details id="toggle" class="left">
-  <summary id="label">show</summary>
-    
-    <pre class="left">
-  <code id="localStorage">
-  
-  </code>
-
-<hr>
-
-<h3>Site Info</h3>
-
-<p class="left">
-
-Current Domain: <span id="domain"></span> <br>
-Username: <span id="username">login in chat</span> <br>
-Local storage:
-
-<details id="toggle" class="left">
-<summary id="label">show</summary>
-
-<pre class="left">
-<code id="localStorage"></code>
-</pre>
-    
-</details> <br><br>
-    <br>
-    <div style="display:flex; justify-content:flex-start;">
-<script type="text/javascript" src="https://www.stat-counter.org/count/jxat"></script><br>
- <a class="hide" href='http://xn--besucherzhlerkostenlos-84b.com/'>Counter ohne Registrierung</a> <script type='text/javascript' src='https://whomania.com/ctr?id=2c4c639a9574eb1da0b15a3d52c08c2da0674ad6'></script>
-    </div>
-    </p>   
-
-</details>
-
-<br><br>
-<br>
-
-<div style="display:flex; justify-content:flex-start;">
-
-<script
-type="text/javascript"
-src="https://www.stat-counter.org/count/jxat">
-</script>
-
-<br>
-
-<a class="hide" href='http://xn--besucherzhlerkostenlos-84b.com/'>
-Counter ohne Registrierung
-</a>
-
-<script
-type='text/javascript'
-src='https://whomania.com/ctr?id=2c4c639a9574eb1da0b15a3d52c08c2da0674ad6'>
-</script>
-
-</div>
-
-</p>
-
-<script>
-const details = document.getElementById("toggle");
-const label = document.getElementById("label");
-
-function updateLabel() {
-  label.textContent = details.open ? "hide" : "show";
-label.textContent = details.open ? "hide" : "show";
-}
-
-details.addEventListener("toggle", updateLabel);
-updateLabel();
-</script>
-  
-  <hr>
-    <h3>Links</h3>
-  <p class="left">
-    <a href="https://ubghub.org/?site=PGIS+3" target="_blank">Upvote on UBGHub</a> <br>
-    <a href="https://pgis3-byod.vercel.app/" target="_blank">BYOD (bring your own device)</a> <br>
-    <a href="/particles.html" target="_blank">Particles</a> <br>
-    <a href="https://github.com/0800WebDev/pgis3" target="_blank">Github repo</a> <br>
-    <a href="https://pgis.x10.mx/" target="_blank">PGIS 2</a> <br>
-    <a href="http://pgis.x10.mx/old.html" target="_blank">PGIS 1 (preview, no longer in use)</a> <br>
-    <a href="https://pgis3.vercel.app" target="_blank">PGIS 3 official link</a>
-
-<hr>
-
-<h3>Links</h3>
-
-<p class="left">
-
-<a href="https://ubghub.org/?site=PGIS+3" target="_blank">
-Upvote on UBGHub
-</a> <br>
-
-<a href="https://pgis3-byod.vercel.app/" target="_blank">
-BYOD (bring your own device)
-</a> <br>
-
-<a href="/particles.html" target="_blank">
-Particles
-</a> <br>
-
-<a href="https://github.com/0800WebDev/pgis3" target="_blank">
-Github repo
-</a> <br>
-
-<a href="https://pgis.x10.mx/" target="_blank">
-PGIS 2
-</a> <br>
-
-<a href="http://pgis.x10.mx/old.html" target="_blank">
-PGIS 1 (preview, no longer in use)
-</a> <br>
-
-<a href="https://pgis3.vercel.app" target="_blank">
-PGIS 3 official link
-</a>
-
-</p>
-
-<hr>
-
-<h3>Official mirrors</h3>
-
-<p class="left">
-
-<a href="https://test-v3.appwrite.network/" target="_blank">
-https://test-v3.appwrite.network/
-</a> <br>
-
-<a href="https://math.port0.org/" target="_blank">
-https://math.port0.org/
-</a> <br>
-
-<a href="https://homework555.netlify.app/" target="_blank">
-https://homework555.netlify.app/
-</a> <br>
-
-<a href="http://math.monedita.cl/" target="_blank">
-http://math.monedita.cl/
-</a>
-
-</p>
-
-<hr>
-
-<img src="/assets/pgis.png" width="100px" height="100px">
-<img src="/assets/logo-2.png" width="100px" height="100px">
-
-<hr>
-    <h3>Official mirrors</h3>
-  <p class="left">
-    
-  <a href="https://test-v3.appwrite.network/" target="_blank">https://test-v3.appwrite.network/</a> <br>
-    <a href="https://math.port0.org/" target="_blank">https://math.port0.org/</a> <br>
-    <a href="https://homework555.netlify.app/" target="_blank">https://homework555.netlify.app/</a> <br>
-    <a href="http://math.monedita.cl/" target="_blank">http://math.monedita.cl/</a> 
-   
-    
-  </p>
-  <hr>
-  <img src="/assets/pgis.png" width="100px" height="100px">   <img src="/assets/logo-2.png" width="100px" height="100px"> <hr>
-  <br>
-  <p>This is a beta build. Features may change and bugs are expected.</p>
-  
-  
-
-<br>
-
-<p>
-This is a beta build. Features may change and bugs are expected.
-</p>
-
-</div>
-</div>
-
-
-<!-- =========================
-PROXIES BUTTON + MENU
-========================== -->
-
-<button id="proxiesButton" onclick="toggleProxies()">
-proxies
-</button>
-
-<div id="proxiesMenu">
-
-<h3>Proxies</h3>
-
-<a
-class="proxyLink"
-href="https://s3.amazonaws.com/prageru-server/mathematics.html"
-target="_blank"
-rel="noopener noreferrer"
->
-Link 1
-</a>
-
-<a
-class="proxyLink"
-href="http://account.englishbridalcouture.com"
-target="_blank"
-rel="noopener noreferrer"
->
-Link 2
-</a>
-
-<a
-class="proxyLink"
-href="https://noterplus-157.firebaseapp.com/?_sm_au_=iVVf4jnVnW4QQFZ56kkGkKOL1KKKpl"
-target="_blank"
-rel="noopener noreferrer"
->
-Link 3
-</a>
-
-<a
-class="proxyLink"
-href="https://raw.esm.sh/gh/NightProxy/DD-Static@3775f24/dist/index.svg"
-target="_blank"
-rel="noopener noreferrer"
->
-Link 4
-</a>
-
-<a
-class="proxyLink"
-href="https://storage.googleapis.com/canvas-lms/index.html"
-target="_blank"
-rel="noopener noreferrer"
->
-Link 5
-</a>
-
-<a
-class="proxyLink"
-href="https://ethostulsa.org/index?cache-1659681562"
-target="_blank"
-rel="noopener noreferrer"
->
-Link 6
-</a>
-
-<button id="closeProxies" onclick="toggleProxies()">
-Close
-</button>
-
-</div>
-    
+      <div class="search-container">
+        <input type="text" id="blankUrlInput" class="search-input" placeholder="Enter URL to open in about:blank...">
+        <button onclick="launchAboutBlank()" class="search-btn">Go</button>
       </div>
- 
-  
- <script>
-   const currentDomain = window.location.hostname;
-  
-  document.getElementById('domain').textContent = currentDomain;
-   
-   const displayElement = document.getElementById('localStorage');
 
+      <hr>
+      <h3>Version Info</h3>
+      <p class="left">
+        VERSION: 3 <br>
+        GAMES: <span class="games">N/A</span><br>
+        UPDATE: Beta <br>
+        SUB-UPDATE: 0
+      </p>
 
-<script>
-const currentDomain = window.location.hostname;
+      <hr>
 
-document.getElementById('domain').textContent = currentDomain;
+      <h3>Site Info</h3>
+      <p class="left">
+        Current Domain: <span id="domain"></span> <br>
+        Username: <span id="username">login in chat</span> <br>
+        Local storage:
+        <details id="toggle" class="left">
+          <summary id="label">show</summary>
+          <pre class="left"><code id="localStorage"></code></pre>
+        </details>
+        <br><br>
+        <div style="display:flex; justify-content:flex-start;">
+          <script type="text/javascript" src="https://www.stat-counter.org/count/jxat"></script><br>
+          <span class="hide">Counter ohne Registrierung</span> 
+          <script type='text/javascript' src='https://whomania.com/ctr?id=2c4c639a9574eb1da0b15a3d52c08c2da0674ad6'></script>
+        </div>
+      </p>
 
-const displayElement = document.getElementById('localStorage');
+      <hr>
 
-if (displayElement) {
-    const allData = {};
-const allData = {};
+      <h3>Links</h3>
+      <div class="left">
+        <span class="copyable-link">https://ubghub.org/?site=PGIS+3</span>
+        <span class="copyable-link">https://pgis3-byod.vercel.app/</span>
+        <span class="copyable-link">/particles.html</span>
+        <span class="copyable-link">https://github.com/0800WebDev/pgis3</span>
+        <span class="copyable-link">https://pgis.x10.mx/</span>
+        <span class="copyable-link">http://pgis.x10.mx/old.html</span>
+        <span class="copyable-link">https://pgis3.vercel.app</span>
+      </div>
 
-for (let i = 0; i < localStorage.length; i++) {
-  const key = localStorage.key(i);
-  allData[key] = localStorage.getItem(key);
-const key = localStorage.key(i);
-allData[key] = localStorage.getItem(key);
-}
+      <hr>
 
-displayElement.textContent = JSON.stringify(allData, null, 2);
-}
-    displayElement.textContent = JSON.stringify(allData, null, 2);
-} 
-</script>
+      <h3>Official mirrors</h3>
+      <div class="left">
+        <span class="copyable-link">https://test-v3.appwrite.network/</span>
+        <span class="copyable-link">https://math.port0.org/</span>
+        <span class="copyable-link">https://homework555.netlify.app/</span>
+        <span class="copyable-link">http://math.monedita.cl/</span>
+      </div>
 
+      <hr>
 
-  </script>
-  
-<script>
+      <img src="/assets/pgis.png" width="100px" height="100px">
+      <img src="/assets/logo-2.png" width="100px" height="100px">
 
-  function loadUsername() {
-  const username = localStorage.getItem('username');
-function loadUsername() {
-const username = localStorage.getItem('username');
+      <hr>
+      <br>
+      <p>This is a beta build. Features may change and bugs are expected.</p>
+    </div>
+  </div>
 
-  const el = document.getElementById('username');
-  if (el && username) {
-    el.textContent = username;
-  }
-const el = document.getElementById('username');
+  <script>
+    function launchAboutBlank() {
+      let url = document.getElementById('blankUrlInput').value.trim();
+      if (!url) return;
+      if (!url.startsWith('http://') && !url.startsWith('https://')) {
+        url = 'https://' + url;
+      }
+      const win = window.open('about:blank', '_blank');
+      if (win) {
+        win.document.title = "My Drive - Google Drive";
+        const iframe = win.document.createElement('iframe');
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.border = 'none';
+        iframe.style.position = 'fixed';
+        iframe.style.top = '0';
+        iframe.style.bottom = '0';
+        iframe.style.left = '0';
+        iframe.style.right = '0';
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+        win.document.body.style.margin = '0';
+      }
+    }
 
-if (el && username) {
-el.textContent = username;
-}
-}
+    fetch("/games.json")
+      .then(res => res.json())
+      .then(games => {
+        document.querySelectorAll(".games").forEach(el => {
+          el.textContent = games.length;
+        });
+      })
+      .catch(() => {});
 
-document.addEventListener('DOMContentLoaded', loadUsername);
-  
+    const currentDomain = window.location.hostname;
+    document.getElementById('domain').textContent = currentDomain;
 
-</script>
+    const displayElement = document.getElementById('localStorage');
+    if (displayElement) {
+      const allData = {};
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        allData[key] = localStorage.getItem(key);
+      }
+      displayElement.textContent = JSON.stringify(allData, null, 2);
+    }
 
+    const details = document.getElementById("toggle");
+    const label = document.getElementById("label");
+    function updateLabel() {
+      label.textContent = details.open ? "hide" : "show";
+    }
+    details.addEventListener("toggle", updateLabel);
+    updateLabel();
 
-<script>
-  const blocksiUrl = "chrome-extension://ghlpmldmjjhmdgmneoaibbegkjjbonbk/images/icons/yt-denied.png";
+    function loadUsername() {
+      const username = localStorage.getItem('username');
+      const el = document.getElementById('username');
+      if (el && username) {
+        el.textContent = username;
+      }
+    }
+    document.addEventListener('DOMContentLoaded', loadUsername);
 
-const blocksiUrl =
-"chrome-extension://ghlpmldmjjhmdgmneoaibbegkjjbonbk/images/icons/yt-denied.png";
-
-fetch(blocksiUrl)
-    .then(response => {
+    const blocksiUrl = "chrome-extension://ghlpmldmjjhmdgmneoaibbegkjjbonbk/images/icons/yt-denied.png";
+    fetch(blocksiUrl)
+      .then(response => {
         if (response.ok) {
-          console.log("blocksi extension detected");
-            setTimeout(() => {
-                document.querySelector("#__blocksi_iframe_blocked__")?.remove();
-            }, 2000);
+          setTimeout(() => {
+            document.querySelector("#__blocksi_iframe_blocked__")?.remove();
+          }, 2000);
         }
-    })
-    .catch(() => {});
-.then(response => {
-
-if (response.ok) {
-
-console.log("blocksi extension detected");
-
-setTimeout(() => {
-
-document
-.querySelector("#__blocksi_iframe_blocked__")
-?.remove();
-
-}, 2000);
-
-}
-
-})
-.catch(() => {});
-
-</script>
-
-
-<!-- Proxies button script -->
-<script>
-
-function toggleProxies() {
-
-const menu = document.getElementById("proxiesMenu");
-
-if (menu.style.display === "block") {
-menu.style.display = "none";
-} else {
-menu.style.display = "block";
-}
-
-}
-
-</script>
-
+      })
+      .catch(() => {});
+  </script>
 </body>
 </html>
