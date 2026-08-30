@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Links</title>
+
+<style>
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background: #f5f5f5;
+color: #111;
+min-height: 100vh;
+}
+
+/* Main content */
+.container {
+width: 90%;
+max-width: 700px;
+margin: 0 auto;
+padding: 50px 0 100px;
+}
+
+h1 {
+text-align: center;
+font-size: 38px;
+margin-bottom: 35px;
+}
+
+/* Link buttons */
+.link {
+display: block;
+text-decoration: none;
+color: #111;
+background: white;
+border: 1px solid #ddd;
+padding: 18px 20px;
+margin: 14px 0;
+border-radius: 14px;
+transition: 0.2s ease;
+}
+
+.link:hover {
+transform: translateY(-2px);
+box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.link-title {
+font-size: 18px;
+font-weight: bold;
+}
+
+.link-url {
+margin-top: 6px;
+font-size: 13px;
+color: #777;
+word-break: break-all;
+}
+
+/* =========================
+PR*XIES BUTTON
+========================= */
+
+.proxies-button {
+position: fixed;
+left: 15px;
+bottom: 15px;
+
+padding: 9px 13px;
+
+background: #222;
+color: white;
+
+border: none;
+border-radius: 8px;
+
+font-size: 12px;
+font-weight: bold;
+
+cursor: pointer;
+
+z-index: 9999;
+
+transition: 0.2s ease;
+}
+
+.proxies-button:hover {
+background: #333;
+transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+.container {
+width: 92%;
+padding-top: 35px;
+}
+
+h1 {
+font-size: 32px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<main class="container">
+
+<h1>Happy Links</h1>
+
+<a
+class="link"
+href="https://s3.amazonaws.com/prageru-server/mathematics.html"
+target="_blank"
+rel="noopener noreferrer"
+>
+<div class="link-title">Link 1</div>
+<div class="link-url">
+s3.amazonaws.com/prageru-server/mathematics.html
+</div>
+</a>
+
+<a
+class="link"
+href="http://account.englishbridalcouture.com"
+target="_blank"
+rel="noopener noreferrer"
+>
+<div class="link-title">Link 2</div>
+<div class="link-url">
+account.englishbridalcouture.com
+</div>
+</a>
+
+<a
+class="link"
+href="https://noterplus-157.firebaseapp.com/?_sm_au_=iVVf4jnVnW4QQFZ56kkGkKOL1KKKpl"
+target="_blank"
+rel="noopener noreferrer"
+>
+<div class="link-title">Link 3</div>
+<div class="link-url">
+noterplus-157.firebaseapp.com
+</div>
+</a>
+
+<a
+class="link"
+href="https://raw.esm.sh/gh/NightProxy/DD-Static@3775f24/dist/index.svg"
+target="_blank"
+rel="noopener noreferrer"
+>
+<div class="link-title">Link 4</div>
+<div class="link-url">
+raw.esm.sh / NightProxy / DD-Static
+</div>
+</a>
+
+<a
+class="link"
+href="https://storage.googleapis.com/canvas-lms/index.html"
+target="_blank"
+rel="noopener noreferrer"
+>
+<div class="link-title">Link 5</div>
+<div class="link-url">
+storage.googleapis.com/canvas-lms/index.html
+</div>
+</a>
+
+<a
+class="link"
+href="https://ethostulsa.org/index?cache-1659681562"
+target="_blank"
+rel="noopener noreferrer"
+>
+<div class="link-title">Link 6</div>
+<div class="link-url">
+ethostulsa.org
+</div>
+</a>
+
+</main>
+
+
+<!-- Bottom-left button -->
+<button
+class="proxies-button"
+onclick="alert('Pr*xies')"
+>
+pr*xies
+</button>
+
+</body>
+</html>
