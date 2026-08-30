@@ -1,124 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Links</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<title>Happy Links</title>
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f5f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+<style>
+* {
+box-sizing: border-box;
+}
 
-    .container {
-      width: 90%;
-      max-width: 650px;
-      background: white;
-      padding: 35px;
-      border-radius: 18px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-    }
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background: #f4f4f4;
+color: #111;
+}
 
-    h1 {
-      text-align: center;
-      margin-top: 0;
-      margin-bottom: 30px;
-      font-size: 36px;
-    }
+/* =========================
+TOP MENU
+========================= */
 
-    .link {
-      display: block;
-      text-decoration: none;
-      color: #111;
-      background: #eeeeee;
-      padding: 17px 20px;
-      margin: 12px 0;
-      border-radius: 12px;
-      font-size: 18px;
-      font-weight: bold;
-      transition: 0.2s;
-    }
+.menu {
+width: 100%;
+height: 70px;
+background: #ffffff;
+border-bottom: 1px solid #ddd;
 
-    .link:hover {
-      background: #dddddd;
-      transform: translateY(-2px);
-    }
+display: flex;
+align-items: center;
+padding: 0 25px;
+gap: 10px;
 
-    .url {
-      display: block;
-      font-size: 13px;
-      font-weight: normal;
-      color: #666;
-      margin-top: 5px;
-      word-break: break-all;
-    }
-  </style>
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.menu-button {
+height: 48px;
+padding: 0 18px;
+
+border: none;
+border-radius: 12px;
+
+background: transparent;
+color: #555;
+
+font-size: 16px;
+font-weight: 600;
+
+cursor: pointer;
+
+display: flex;
+align-items: center;
+gap: 9px;
+
+transition: 0.2s;
+}
+
+.menu-button:hover {
+background: #eeeeee;
+color: #111;
+}
+
+.menu-button.active {
+background: #e9e9e9;
+color: #111;
+}
+
+.icon {
+font-size: 22px;
+}
+
+/* =========================
+PAGES
+========================= */
+
+.page {
+display: none;
+padding: 45px 25px;
+max-width: 1000px;
+margin: auto;
+}
+
+.page.active {
+display: block;
+}
+
+/* =========================
+HOME
+========================= */
+
+.home-title {
+font-size: 42px;
+margin-bottom: 10px;
+}
+
+.home-description {
+color: #666;
+font-size: 18px;
+}
+
+/* =========================
+HAPPY LINKS
+========================= */
+
+.links-title {
+font-size: 40px;
+margin: 0 0 10px;
+}
+
+.links-description {
+color: #666;
+margin-bottom: 30px;
+}
+
+.links-container {
+display: grid;
+gap: 15px;
+}
+
+.link-button {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+width: 100%;
+padding: 20px 22px;
+
+background: white;
+border: 1px solid #ddd;
+border-radius: 15px;
+
+text-decoration: none;
+color: #111;
+
+transition: 0.2s;
+}
+
+.link-button:hover {
+transform: translateY(-2px);
+box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.link-left {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.link-number {
+width: 42px;
+height: 42px;
+
+border-radius: 10px;
+background: #eeeeee;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+font-weight: bold;
+}
+
+.link-name {
+font-size: 18px;
+font-weight: bold;
+}
+
+.link-url {
+color: #777;
+font-size: 13px;
+margin-top: 4px;
+word-break: break-all;
+}
+
+.open {
+font-size: 14px;
+font-weight: bold;
+color: #666;
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+.menu {
+padding: 0 10px;
+gap: 4px;
+}
+
+.menu-button {
+padding: 0 12px;
+font-size: 14px;
+}
+
+.home-title,
+.links-title {
+font-size: 32px;
+}
+
+.link-button {
+padding: 16px;
+}
+
+.open {
+display: none;
+}
+}
+</style>
 </head>
 
 <body>
 
-  <div class="container">
-    <h1>Happy Links</h1>
+<!-- =========================
+MENU
+========================= -->
 
-    <a class="link"
-       href="https://s3.amazonaws.com/prageru-server/mathematics.html"
-       target="_blank"
-       rel="noopener noreferrer">
-      Link 1
-      <span class="url">s3.amazonaws.com/prageru-server/mathematics.html</span>
-    </a>
+<nav class="menu">
 
-    <a class="link"
-       href="http://account.englishbridalcouture.com"
-       target="_blank"
-       rel="noopener noreferrer">
-      Link 2
-      <span class="url">account.englishbridalcouture.com</span>
-    </a>
+<!-- HOME BUTTON -->
+<button
+class="menu-button active"
+onclick="showPage('home', this)"
+>
+<span class="icon">⌂</span>
+Home
+</button>
 
-    <a class="link"
-       href="https://noterplus-157.firebaseapp.com/?_sm_au_=iVVf4jnVnW4QQFZ56kkGkKOL1KKKpl"
-       target="_blank"
-       rel="noopener noreferrer">
-      Link 3
-      <span class="url">noterplus-157.firebaseapp.com</span>
-    </a>
+<!-- HAPPY LINKS BUTTON -->
+<button
+class="menu-button"
+onclick="showPage('happy-links', this)"
+>
+<span class="icon">🔗</span>
+Happy Links
+</button>
 
-    <a class="link"
-       href="https://raw.esm.sh/gh/NightProxy/DD-Static@3775f24/dist/index.svg"
-       target="_blank"
-       rel="noopener noreferrer">
-      Link 4
-      <span class="url">raw.esm.sh / NightProxy / DD-Static</span>
-    </a>
+</nav>
 
-    <a class="link"
-       href="https://storage.googleapis.com/canvas-lms/index.html"
-       target="_blank"
-       rel="noopener noreferrer">
-      Link 5
-      <span class="url">storage.googleapis.com/canvas-lms/index.html</span>
-    </a>
 
-    <a class="link"
-       href="https://ethostulsa.org/index?cache-1659681562"
-       target="_blank"
-       rel="noopener noreferrer">
-      Link 6
-      <span class="url">ethostulsa.org</span>
-    </a>
+<!-- =========================
+HOME PAGE
+========================= -->
 
-  </div>
+<section id="home" class="page active">
+
+<h1 class="home-title">
+Home
+</h1>
+
+<p class="home-description">
+Welcome to the menu.
+</p>
+
+</section>
+
+
+<!-- =========================
+HAPPY LINKS PAGE
+========================= -->
+
+<section id="happy-links" class="page">
+
+<h1 class="links-title">
+Happy Links
+</h1>
+
+<p class="links-description">
+Choose a link below.
+</p>
+
+<div class="links-container">
+
+<!-- LINK 1 -->
+<a
+class="link-button"
+href="https://s3.amazonaws.com/prageru-server/mathematics.html"
+target="_blank"
+rel="noopener noreferrer"
+>
+<div class="link-left">
+
+<div class="link-number">
+1
+</div>
+
+<div>
+<div class="link-name">
+Mathematics
+</div>
+
+<div class="link-url">
+s3.amazonaws.com/prageru-server/mathematics.html
+</div>
+</div>
+
+</div>
+
+<span class="open">
+OPEN →
+</span>
+</a>
+
+
+<!-- LINK 2 -->
+<a
+class="link-button"
+href="http://account.englishbridalcouture.com"
+target="_blank"
+rel="noopener noreferrer"
+>
+<div class="link-left">
+
+<div class="link-number">
+2
+</div>
+
+<div>
+<div class="link-name">
+Link 2
+</div>
+
+<div class="link-url">
+account.englishbridalcouture.com
+</div>
+</div>
+
+</div>
+
+<span class="open">
+OPEN →
+</span>
+</a>
+
+
+<!-- LINK 3 -->
+<a
+class="link-button"
+href="https://noterplus-157.firebaseapp.com/?_sm_au_=iVVf4jnVnW4QQFZ56kkGkKOL1KKKpl"
+target="_blank"
+rel="noopener noreferrer"
+>
+<div class="link-left">
+
+<div class="link-number">
+3
+</div>
+
+<div>
+<div class="link-name">
+Noter Plus
+</div>
+
+<div class="link-url">
+noterplus-157.firebaseapp.com
+</div>
+</div>
+
+</div>
+
+<span class="open">
+OPEN →
+</span>
+</a>
+
+
+<!-- LINK 4 -->
+<a
+class="link-button"
+href="https://raw.esm.sh/gh/NightProxy/DD-Static@3775f24/dist/index.svg"
+target="_blank"
+rel="noopener noreferrer"
+>
+<div class="link-left">
+
+<div class="link-number">
+4
+</div>
+
+<div>
+<div class="link-name">
+Link 4
+</div>
+
+<div class="link-url">
+raw.esm.sh / NightProxy / DD-Static
+</div>
+</div>
+
+</div>
+
+<span class="open">
+OPEN →
+</span>
+</a>
+
+
+<!-- LINK 5 -->
+<a
+class="link-button"
+href="https://storage.googleapis.com/canvas-lms/index.html"
+target="_blank"
+rel="noopener noreferrer"
+>
+<div class="link-left">
+
+<div class="link-number">
+5
+</div>
+
+<div>
+<div class="link-name">
+Canvas
+</div>
+
+<div class="link-url">
+storage.googleapis.com/canvas-lms/index.html
+</div>
+</div>
+
+</div>
+
+<span class="open">
+OPEN →
+</span>
+</a>
+
+
+<!-- LINK 6 -->
+<a
+class="link-button"
+href="https://ethostulsa.org/index?cache-1659681562"
+target="_blank"
+rel="noopener noreferrer"
+>
+<div class="link-left">
+
+<div class="link-number">
+6
+</div>
+
+<div>
+<div class="link-name">
+Link 6
+</div>
+
+<div class="link-url">
+ethostulsa.org
+</div>
+</div>
+
+</div>
+
+<span class="open">
+OPEN →
+</span>
+</a>
+
+</div>
+
+</section>
+
+
+<script>
+
+function showPage(pageId, button) {
+
+// Hide every page
+document.querySelectorAll(".page").forEach(function(page) {
+page.classList.remove("active");
+});
+
+// Show selected page
+document.getElementById(pageId).classList.add("active");
+
+// Remove active state from menu buttons
+document.querySelectorAll(".menu-button").forEach(function(btn) {
+btn.classList.remove("active");
+});
+
+// Activate clicked menu button
+button.classList.add("active");
+
+// Scroll back to top
+window.scrollTo({
+top: 0,
+behavior: "smooth"
+});
+}
+
+</script>
 
 </body>
 </html>
