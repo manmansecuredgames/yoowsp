@@ -555,7 +555,24 @@ win.document.body.appendChild(iframe);
 });
 });
 });
-</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+document.querySelectorAll("a").forEach(link => {
+link.addEventListener("click", (e) => {
+const url = link.getAttribute("href");
+
+if (url && url !== "#" && !url.startsWith("javascript:")) {
+e.preventDefault();
+
+// Open about:blank page first, then navigate it to the destination
+const win = window.open("about:blank", "_blank");
+if (win) {
+win.location.href = url;
+}
+}
+});
+});
+});
 
 </body>
 </html>
