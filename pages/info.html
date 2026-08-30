@@ -103,7 +103,6 @@ text-align: left !important;
 color: transparent;
 }
 
-
 /* =========================
 PROXIES BUTTON
 ========================= */
@@ -132,7 +131,6 @@ transition: 0.2s;
 #proxiesButton:hover {
 background: rgba(60,60,60,0.95);
 }
-
 
 /* =========================
 PROXIES MENU
@@ -373,7 +371,6 @@ This is a beta build. Features may change and bugs are expected.
 </div>
 </div>
 
-
 <!-- =========================
 PROXIES BUTTON + MENU
 ========================== -->
@@ -446,7 +443,6 @@ Close
 
 </div>
 
-
 <script>
 const currentDomain = window.location.hostname;
 
@@ -466,7 +462,6 @@ displayElement.textContent = JSON.stringify(allData, null, 2);
 }
 </script>
 
-
 <script>
 
 function loadUsername() {
@@ -482,7 +477,6 @@ el.textContent = username;
 document.addEventListener('DOMContentLoaded', loadUsername);
 
 </script>
-
 
 <script>
 
@@ -511,7 +505,6 @@ document
 
 </script>
 
-
 <!-- Proxies button script -->
 <script>
 
@@ -527,6 +520,41 @@ menu.style.display = "block";
 
 }
 
+</script>
+
+<!-- Script to open links inside about:blank -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+document.querySelectorAll("a").forEach(link => {
+link.addEventListener("click", (e) => {
+const url = link.getAttribute("href");
+
+// Ensure it's a valid target link and not an internal JS anchor
+if (url && url !== "#" && !url.startsWith("javascript:")) {
+e.preventDefault();
+
+// Open a blank window
+const win = window.open("about:blank", "_blank");
+if (win) {
+win.document.title = link.textContent.trim() || "Page";
+
+// Style the body of about:blank to remove margins
+win.document.body.style.margin = "0";
+win.document.body.style.height = "100vh";
+
+// Embed target URL in iframe
+const iframe = win.document.createElement("iframe");
+iframe.src = url;
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+
+win.document.body.appendChild(iframe);
+}
+}
+});
+});
+});
 </script>
 
 </body>
