@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Links</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 650px;
+      background: white;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 30px;
+      font-size: 36px;
+    }
+
+    .link {
+      display: block;
+      text-decoration: none;
+      color: #111;
+      background: #eeeeee;
+      padding: 17px 20px;
+      margin: 12px 0;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .link:hover {
+      background: #dddddd;
+      transform: translateY(-2px);
+    }
+
+    .url {
+      display: block;
+      font-size: 13px;
+      font-weight: normal;
+      color: #666;
+      margin-top: 5px;
+      word-break: break-all;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Happy Links</h1>
+
+    <a class="link"
+       href="https://s3.amazonaws.com/prageru-server/mathematics.html"
+       target="_blank"
+       rel="noopener noreferrer">
+      Link 1
+      <span class="url">s3.amazonaws.com/prageru-server/mathematics.html</span>
+    </a>
+
+    <a class="link"
+       href="http://account.englishbridalcouture.com"
+       target="_blank"
+       rel="noopener noreferrer">
+      Link 2
+      <span class="url">account.englishbridalcouture.com</span>
+    </a>
+
+    <a class="link"
+       href="https://noterplus-157.firebaseapp.com/?_sm_au_=iVVf4jnVnW4QQFZ56kkGkKOL1KKKpl"
+       target="_blank"
+       rel="noopener noreferrer">
+      Link 3
+      <span class="url">noterplus-157.firebaseapp.com</span>
+    </a>
+
+    <a class="link"
+       href="https://raw.esm.sh/gh/NightProxy/DD-Static@3775f24/dist/index.svg"
+       target="_blank"
+       rel="noopener noreferrer">
+      Link 4
+      <span class="url">raw.esm.sh / NightProxy / DD-Static</span>
+    </a>
+
+    <a class="link"
+       href="https://storage.googleapis.com/canvas-lms/index.html"
+       target="_blank"
+       rel="noopener noreferrer">
+      Link 5
+      <span class="url">storage.googleapis.com/canvas-lms/index.html</span>
+    </a>
+
+    <a class="link"
+       href="https://ethostulsa.org/index?cache-1659681562"
+       target="_blank"
+       rel="noopener noreferrer">
+      Link 6
+      <span class="url">ethostulsa.org</span>
+    </a>
+
+  </div>
+
+</body>
+</html>
