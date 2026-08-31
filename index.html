@@ -3,18 +3,15 @@
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<meta charset="UTF-8">
-<title>MARI PLACE</title>
-<!--<link rel="icon" type="image/x-icon" href="https://i.postimg.cc/1XJnjRTF/0937a70d8c13420e9c4d8b0dc92bddaa-free-1.png">
--->
+  <meta charset="UTF-8">
+  <title>MARI PLACE</title>
   <link rel="icon" type="image/x-icon" href="/assets/logo-2.png">
-
   <meta name="robots" content="noindex, nofollow">
   
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
-  :root {
+:root {
   --bg: white;
   --text: black;
 }
@@ -24,120 +21,116 @@
   --text: white;
 }
 
-
-
-  
 html, body {
-  
-scroll-behavior: smooth;
-text-align:center;
-color: var(--text);
-width: 100%;
-height: 100%;
-font-family: Arial, sans-serif;
-    margin: 0;
+  scroll-behavior: smooth;
+  text-align:center;
+  color: var(--text);
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
-  html {
-    background: var(--bg);
 
-  }
-body {
-    background: transparent;
+html {
+  background: var(--bg);
 }
+
+body {
+  background: transparent;
+}
+
 #cards2{
-background-color:rgba(0,0,0,0.1);
-display:flex;
-justify-content:center;
-gap: 40px; /* used to be 20px*/
-flex-wrap:wrap;
-position:relative;
-  padding: 30px; /* remove if bad */
+  background-color:rgba(0,0,0,0.1);
+  display:flex;
+  justify-content:center;
+  gap: 40px;
+  flex-wrap:wrap;
+  position:relative;
+  padding: 30px;
   height: 100%;
 }
 
 .gamediv{
-width:200px;
-height:170px;
-background-color:rgba(0,0,0,0.3);
-background-size:cover;
-background-position:center;
-cursor:auto;
-border:1px solid #444;
-border-radius:5px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-position:relative;
-  padding: 5px; /* remove if bad */
-  
+  width:200px;
+  height:170px;
+  background-color:rgba(0,0,0,0.3);
+  background-size:cover;
+  background-position:center;
+  cursor:auto;
+  border:1px solid #444;
+  border-radius:5px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  padding: 5px;
 }
 
-  .gamediv:hover {
-        
-        box-shadow: 0 0 15px white;
+.gamediv:hover {
+  box-shadow: 0 0 15px white;
   transition: box-shadow 0.3s;
-  }
-  
+}
+
 button, select {
-opacity:1!important;
-z-index:2;
-cursor:pointer;
-background-color:#444;
-color:whitesmoke;
-border:none;
-border-radius:4px;
-margin: 10px;
+  opacity:1!important;
+  z-index:2;
+  cursor:pointer;
+  background-color:#444;
+  color:whitesmoke;
+  border:none;
+  border-radius:4px;
+  margin: 10px;
 }
 
 button:hover{
-background-color: black;
-color: white;
-border-radius:6px;
+  background-color: black;
+  color: white;
+  border-radius:6px;
 }
 
 a{
   color: white;
- }
+}
 
 #particles-js{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-z-index: -1 !important;
-pointer-events:none;
-background:transparent;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: -1 !important;
+  pointer-events:none;
+  background:transparent;
 }
+
 .particles-js-canvas-el {
   z-index: -1 !important;
-
 }
 
 iframe {
-      width: 100vw;
-      height: calc(100dvh - clamp(60px, 2vw, 140px));
-      border: none;
-      display: block;
-    }
-  #menu {
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.2);
-    width: 80%;
-    text-align: center;
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 7px;
-    z-index: 2147483647;
-    isolation: isolate;
-    
-  }
+  width: 100vw;
+  height: calc(100dvh - clamp(60px, 2vw, 140px));
+  border: none;
+  display: block;
+}
+
+#menu {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  width: 80%;
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 7px;
+  z-index: 2147483647;
+  isolation: isolate;
+}
 
 #menu::before {
-    content: "";
+  content: "";
   position: absolute;
   width: 70%;
   height: 60px;
@@ -150,127 +143,91 @@ iframe {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-  
-  
-  .icon {
-height: clamp(30px, 0.5vw, 100px);  
-  
-  }
 
+.icon {
+  height: clamp(30px, 0.5vw, 100px); 
+}
 
-  
-  #home {
-    text-align: left;
-    
-  }
+#home {
+  text-align: left;
+}
 
-  #main-text {
-      position: relative;
-    top: 30vh;
-    font-size: 50px;
-    font-family: 'Sora', sans-serif;
-    text-shadow:
-    0 0 10px rgba(255,255,255,0.3),
-    0 0 30px rgba(255,255,255,0.15);
-    animation: float 4s ease-in-out infinite;
-
-     background:
-    linear-gradient(
-      115deg,
-      #4a4a4a 0%,
-      #ffffff 10%,
-      #7a7a7a 18%,
-      #f5f5f5 25%,
-      #8c8c8c 32%,
-      #ffffff 40%,
-      #5e5e5e 50%,
-      #ffffff 60%,
-      #9a9a9a 68%,
-      #f0f0f0 76%,
-      #6e6e6e 85%,
-      #ffffff 100%
-    );
-
+#main-text {
+  position: relative;
+  top: 25vh;
+  font-size: 50px;
+  font-family: 'Sora', sans-serif;
+  text-shadow:
+  0 0 10px rgba(255,255,255,0.3),
+  0 0 30px rgba(255,255,255,0.15);
+  animation: float 4s ease-in-out infinite;
+  background:
+  linear-gradient(
+    115deg,
+    #4a4a4a 0%,
+    #ffffff 10%,
+    #7a7a7a 18%,
+    #f5f5f5 25%,
+    #8c8c8c 32%,
+    #ffffff 40%,
+    #5e5e5e 50%,
+    #ffffff 60%,
+    #9a9a9a 68%,
+    #f0f0f0 76%,
+    #6e6e6e 85%,
+    #ffffff 100%
+  );
   background-size: 300% auto;
-
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   background-size: 200% 200%;
-animation: chrome 20s ease-in-out infinite alternate;
-
-    filter: contrast(1.15) brightness(1.1);
-  }
+  animation: chrome 20s ease-in-out infinite alternate;
+  filter: contrast(1.15) brightness(1.1);
+}
 
 @keyframes chrome {
-  from {
-    background-position: 0% 50%;
-  }
-
-  to {
-    background-position: 100% 50%;
-  }
+  from { background-position: 0% 50%; }
+  to { background-position: 100% 50%; }
 }
 
-  
-  @keyframes float {
-  0%,100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-3px);
-  }
-  }
-
-    b {
-      font-weight: 3000;
-    }
-
-
-
-
-
- .card {
-display:flex;
-justify-content:center;
-gap: 20px;
-flex-wrap:wrap; 
-position:relative;
-z-index:1;
- height: 100%;
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
 }
 
+b {
+  font-weight: 3000;
+}
 
+.card {
+  display:flex;
+  justify-content:center;
+  gap: 20px;
+  flex-wrap:wrap; 
+  position:relative;
+  z-index:1;
+  height: 100%;
+}
 
-
-
-  
-   .settings {
-    width: 300px;
-height: auto;
-background: rgba(255, 255, 255, 0.06);
-   background-size:cover;
-background-position:center;
-cursor:auto;
-border:1px solid #444;
-border-radius:5px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-position:relative;
-  padding: 30px; /* remove if bad */
-    backdrop-filter: blur(5px);
+.settings {
+  width: 300px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.06);
+  background-size:cover;
+  background-position:center;
+  cursor:auto;
+  border:1px solid #444;
+  border-radius:5px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  padding: 30px;
+  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-    margin: 20px;
-    
-  }
-
-
-
-
-
+  margin: 20px;
+}
 
 .game-item {
   opacity: 0;
@@ -281,29 +238,26 @@ position:relative;
   transition: opacity 200ms ease;
 }
 
-
-
 #splash {
   position: relative;
-  top: 29vh;
+  top: 24vh;
   cursor: pointer;
   width: fit-content;
   margin: 0 auto;
 }
 
 .mainBtn {
-  width: 100px;
-  height: 50px;
-  position: relative;
-  top: 30vh;
-  margin:5px;
-  background:#444;
-  color:white;
-  border:none;
-  border-radius:5px;
-  cursor:pointer;
-  font-size:16px;
-
+  width: auto;
+  min-width: 100px;
+  padding: 8px 15px;
+  height: auto;
+  margin: 5px;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .menu-btn.active {
@@ -311,58 +265,120 @@ position:relative;
   transition: box-shadow 0.3s;
 }
 
-    .menu-btn:hover {
-        
-        box-shadow: 0 0 15px white;
+.menu-btn:hover {
+  box-shadow: 0 0 15px white;
   transition: box-shadow 0.3s;
-    }
+}
 
-  #user-info {
-    position: fixed;
-    bottom: 50px;
-    left: 10px;
-  }
+#user-info {
+  position: fixed;
+  bottom: 50px;
+  left: 10px;
+}
 
 input {
-      
-    border: 1px solid #555;
-    border-radius: 2px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: whitesmoke;
-    outline: none;
+  border: 1px solid #555;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: whitesmoke;
+  outline: none;
 }
-  
-  #search {
-    width: 70vw;
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(255,255,255,0.2);
-    transition: all 0.3s ease;
+
+/* Search bar styling */
+#search-container {
+  position: relative;
+  top: 26vh;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#search {
+  width: 50vw;
+  max-width: 500px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
 }
 
 #search::placeholder {
-    color: #aaa;
-    text-align: center;
+  color: #aaa;
+  text-align: center;
 }
 
 #search:focus {
-    border-color: #fff;
-    box-shadow: 0 0 10px rgba(255,255,255,0.5);
-    background-color: rgba(0,0,0,0.8);
+  border-color: #fff;
+  box-shadow: 0 0 10px rgba(255,255,255,0.5);
+  background-color: rgba(0,0,0,0.8);
 }
 
 #games {
   z-index: 10 !important;
 }
-  
+
+/* Modal styles for Links */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #222;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: white;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.copy-btn {
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  word-break: break-all;
+  font-size: 13px;
+  transition: background 0.2s;
+  margin: 0;
+}
+
+.copy-btn:hover {
+  background: #555;
+}
 </style>
 </head>
 
 <body>
 
- <!--widgets-->
-  
+<!--widgets-->
 <div id="batteryWidget">
   <svg viewBox="0 0 24 24" class="battery-icon">
     <rect x="2" y="7" width="18" height="10" rx="2" ry="2"
@@ -372,16 +388,13 @@ input {
     <rect x="20" y="10" width="2" height="4"
       fill="currentColor"/>
   </svg>
-
   <span id="batteryText">--%</span>
 </div>
 
 <style>
-
-
 #batteryWidget {
   position: fixed;
-  top: 10px; /*10px*/
+  top: 10px;
   right: 10px;
   display: flex;
   align-items: center;
@@ -390,16 +403,12 @@ input {
   font-family: sans-serif;
   font-size: 14px;
   z-index: 9999;
-  
-  
-  
 }
 
 .battery-icon {
   width: 24px;
   height: 24px;
 }
-
 </style>
 
 <script>
@@ -413,15 +422,12 @@ async function initBattery() {
 
   function update() {
     const level = Math.round(battery.level * 100);
-
     document.getElementById("batteryText").textContent = level + "%";
-
     const fill = document.getElementById("batteryLevel");
     fill.setAttribute("width", (level / 100) * 16.57);
   }
 
   update();
-
   battery.addEventListener("levelchange", update);
   battery.addEventListener("chargingchange", update);
 }
@@ -433,9 +439,9 @@ initBattery();
 
 <style>
 #fps-counter{
-    position: fixed;
-  top: 35px; /*35*/
-  right: 15px; /*15*/
+  position: fixed;
+  top: 35px;
+  right: 15px;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -443,9 +449,6 @@ initBattery();
   font-family: sans-serif;
   font-size: 14px;
   z-index: 9999;
-  
-  
-  
 }
 </style>
 
@@ -453,44 +456,60 @@ initBattery();
   function fps() {
 (() => {
     const fpsCounter = document.getElementById("fps-counter");
-
     let frames = 0;
     let lastTime = performance.now();
 
     function loop(now) {
         frames++;
-
         if (now >= lastTime + 1000) {
             const fps = Math.round((frames * 1000) / (now - lastTime));
             fpsCounter.textContent = `FPS: ${fps}`;
             frames = 0;
             lastTime = now;
         }
-
         requestAnimationFrame(loop);
     }
-
     requestAnimationFrame(loop);
 })();
   }
   fps();
 </script>
 
-
-  
 <!--main content-->
-  <div id="particles-js"></div>
+<div id="particles-js"></div>
 
 <div style="position:relative;z-index:1;">
 </div>
 
 <div id="games">
-<h1 Id="main-text">MARI PLACE <b>3</b></h1>
-<p id="splash" onclick="loadSplash()">Loading splash...</p>
- <div id="buttons">
-<!--  <button class="mainBtn" onclick="document.querySelector('.menu-btn.active')?.classList.remove('active'); document.getElementById('play').classList.add('active'); loadGames('games')">Play</button> <button class="mainBtn" onclick="document.querySelector('.menu-btn.active')?.classList.remove('active'); document.getElementById('browse').classList.add('active'); proxy()">Browse</button>
--->  </div> 
+  <h1 id="main-text">MARI PLACE</h1>
+  <p id="splash" onclick="loadSplash()">Loading splash...</p>
+  
+  <!-- About Blank Search Bar -->
+  <div id="search-container">
+    <input type="text" id="search" placeholder="Search Google or enter a URL..." onkeydown="handleSearch(event)">
+    <button class="mainBtn" style="margin: 0;" onclick="executeAboutBlankSearch()">Search</button>
+  </div>
+
+  <div id="action-buttons" style="position: relative; top: 28vh;">
+    <button class="mainBtn" onclick="bookmarkSite()">Click to Bookmark</button>
+    <button class="mainBtn" onclick="toggleModal(true)">Links</button>
+  </div>
 </div>
+
+<!-- Links Modal Popup -->
+<div id="linksModal" class="modal-overlay">
+  <div class="modal-content">
+    <h3>Click a link to copy</h3>
+    <div class="link-list">
+      <button class="copy-btn" onclick="copyLink('https://sites.google.com/student.cms.k12.nc.us/shhh/resources-rq', this)">https://sites.google.com/student.cms.k12.nc.us/shhh/resources-rq</button>
+      <button class="copy-btn" onclick="copyLink('https://bit.ly/loveapplesz', this)">https://bit.ly/loveapplesz</button>
+      <button class="copy-btn" onclick="copyLink('https://bit.ly/honestly67', this)">https://bit.ly/honestly67</button>
+    </div>
+    <button class="mainBtn" style="top: 0; margin-top: 10px;" onclick="toggleModal(false)">Close</button>
+  </div>
+</div>
+
 <script src="/blocksi_remover.js"></script>
 <script>
 async function loadSplash() {
@@ -516,21 +535,79 @@ async function loadSplash() {
 }
 
 loadSplash();
+
+function bookmarkSite() {
+  alert("Press " + (navigator.userAgent.toLowerCase().indexOf('mac') != -1 ? 'Cmd' : 'Ctrl') + "+D to bookmark this page.");
+}
+
+function toggleModal(show) {
+  document.getElementById("linksModal").style.display = show ? "flex" : "none";
+}
+
+function copyLink(text, btnElement) {
+  navigator.clipboard.writeText(text).then(() => {
+    const originalText = btnElement.innerText;
+    btnElement.innerText = "Copied to clipboard!";
+    btnElement.style.background = "#28a745";
+    setTimeout(() => {
+      btnElement.innerText = originalText;
+      btnElement.style.background = "#333";
+    }, 1500);
+  }).catch(err => {
+    console.error("Could not copy text: ", err);
+  });
+}
+
+function handleSearch(e) {
+  if (e.key === "Enter") {
+    executeAboutBlankSearch();
+  }
+}
+
+function executeAboutBlankSearch() {
+  const query = document.getElementById("search").value.trim();
+  if (!query) return;
+
+  let targetUrl = query;
+  if (!query.startsWith("http://") && !query.startsWith("https://")) {
+    if (query.includes(".") && !query.includes(" ")) {
+      targetUrl = "https://" + query;
+    } else {
+      targetUrl = "https://www.google.com/search?q=" + encodeURIComponent(query);
+    }
+  }
+
+  const win = window.open("about:blank", "_blank");
+  if (win) {
+    win.document.body.style.margin = "0";
+    win.document.body.style.height = "100vh";
+    const iframe = win.document.createElement("iframe");
+    iframe.style.border = "none";
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
+    iframe.style.margin = "0";
+    iframe.src = targetUrl;
+    win.document.body.appendChild(iframe);
+  } else {
+    alert("Please allow pop-ups to open in about:blank.");
+  }
+}
 </script>
 
-
-<!--<div id="user-info">
- <p>Username: <span id="username"><button onclick="chat()">log in</button></span></p>
-</div> -->
-  
-<div id="menu"><button class="menu-btn active" onclick="Home()" id="home"><img src="/assets/home.png" class="icon"></button> <button class="menu-btn" onclick="loadGames('games')" id="play"><img src="/assets/games.png" class="icon"></button> <button class="menu-btn" onclick="proxy()" id="browse"><img src="/assets/proxy.png" class="icon"></button> <button class="menu-btn" onclick="chat()"><img src="/assets/chat.png" class="icon"></button> <button class="menu-btn" onclick="loadGames('apps')"><img src="/assets/apps.png" class="icon"></button> <button class="menu-btn" onclick="movies()" ><img src="/assets/movies.png" class="icon"></button> <button class="menu-btn" onclick="settings()"><img src="/assets/settings.png" class="icon"></button> <button class="menu-btn" onclick="info()"><img src="/assets/info.png" class="icon"></button></div>
+<div id="menu">
+  <button class="menu-btn active" onclick="Home()" id="home"><img src="/assets/home.png" class="icon"></button> 
+  <button class="menu-btn" onclick="loadGames('games')" id="play"><img src="/assets/games.png" class="icon"></button> 
+  <button class="menu-btn" onclick="chat()"><img src="/assets/chat.png" class="icon"></button> 
+  <button class="menu-btn" onclick="loadGames('apps')"><img src="/assets/apps.png" class="icon"></button> 
+  <button class="menu-btn" onclick="movies()"><img src="/assets/movies.png" class="icon"></button> 
+  <button class="menu-btn" onclick="settings()"><img src="/assets/settings.png" class="icon"></button> 
+  <button class="menu-btn" onclick="info()"><img src="/assets/info.png" class="icon"></button>
+</div>
 <div id="bottom"></div>
-
 
 <script>
 function loadUsername() {
   const username = localStorage.getItem('username');
-
   const el = document.getElementById('username');
   if (el && username) {
     el.textContent = username;
@@ -538,36 +615,24 @@ function loadUsername() {
 }
 
 document.addEventListener('DOMContentLoaded', loadUsername);
-</script>
 
-  
-<script>
 const buttons = document.querySelectorAll(".menu-btn");
-
 buttons.forEach(button => {
     button.addEventListener("click", () => {
         document.querySelector(".menu-btn.active")?.classList.remove("active");
         button.classList.add("active");
     });
 });
-</script>
-
-<script>
 
 document.querySelectorAll("button").forEach(btn=>{
 if(btn.textContent.trim()==="open"||btn.textContent.trim()==="try 8os" ||btn.textContent.trim()==="try coreus" ||btn.textContent.trim()==="try UBGdir"){
 btn.style.width="120px"
 }
-})
+});
 
-</script>
-
-<script>
-
-const placeholder="https://pgis.x10.mx/placeholder.png"
+const placeholder="https://pgis.x10.mx/placeholder.png";
 
 document.querySelectorAll("img").forEach(img=>{
-
 img.addEventListener("error",function(){
 if(this.src!==placeholder){
 this.src=placeholder
@@ -577,24 +642,8 @@ this.src=placeholder
 if(!img.getAttribute("src")){
 img.src=placeholder
 }
+});
 
-})
-
-</script>
-
-
-
-
-
-
-
-
-
-  
-
-
-<script>
-  
 const games = document.getElementById("games");
 
 const observer = new MutationObserver((mutations) => {
@@ -623,25 +672,7 @@ observer.observe(document.getElementById("games"), {
   childList: true,
   subtree: true
 });
-  
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
 
 <script type="module" src="app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
@@ -666,7 +697,7 @@ particlesJS('particles-js',{
 "retina_detect":true
 })
 }
-  particlesStart();
+particlesStart();
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
@@ -674,14 +705,7 @@ particlesJS('particles-js',{
 eruda.init();
 </script>
 
-
-  <script>
-// if (localStorage.getItem("password_correct") !== "true") {
-// location.href = "pages/pass.html";
-// }
-  </script>
-
-  <script>
+<script>
 const direct = document.referrer === "";
 
 window.vercelFlags = {
@@ -692,347 +716,8 @@ document.documentElement.setAttribute(
   "data-flag-direct_visit",
   direct ? "true" : "false"
 );
-  </script>
+</script>
 <script defer src="/_vercel/insights/script.js"></script>
 
-
-
-
-
-
-
-
-<style>
-  
-  #toolbox-btn {
-    height: 100px;
-    width: auto;
-    border: none;
-    border-radius: 0px;
-    color: white;
-    background-color: black;
-    
-
-  }
-  #toolbox-content {
-    padding: 10px;
-    text-align: center;
-  }
-  #toolbox {
-    background: black;
-    display: flex;
-  align-items: center;
-    border-radius: 2px;
-    box-shadow: 0 0 15px white;
-    z-index: 999999999999999999999999999999999999999999999999999999;
-  }
-  .tool-item {
-    height: 30px;
-    width: 30px;
-    color: black;
-    background: white;
-    border-radius: 4px;
-    border: none;
-  }
-  
-</style>
-<div id="toolbox">
-  <div id="toolbox-content" hidden>
-<b>toolbox</b> <br>
-  <button title="about:blank" onclick="toolboxAboutBlank()" class="tool-item"><i class="fa-solid fa-school-circle-xmark"></i></button> <button title="tab cloak" onclick="tempTabCloak()" class="tool-item"><i class="fa-solid fa-computer"></i></button> <button title="panic button" onclick="toolboxRedirect()" class="tool-item"><i class="fa-solid fa-circle-exclamation"></i></button>
-    <hr>
-    <button title="phantom refresh" onclick='
-      
-      (async()=>{try{const res=await fetch(location.href);const text=await res.text();const doc=new DOMParser().parseFromString(text,"text/html");document.head.innerHTML=doc.head.innerHTML;document.body.innerHTML=doc.body.innerHTML;console.log("page reset");}catch(e){console.error(e);}})(); setTimeout(() => {
-  toolboxStart();
-  loadSplash();
-  initBattery();
-  fps();
-  particlesStart();
-  
-}, 400);
-' class="tool-item"><i class="fa-solid fa-arrow-rotate-left"></i></button>
-    <button title="remove element" onclick="startElementRemover();" class="tool-item"><i class="fa-solid fa-trash"></i></button> 
-    <button title="remove from blacklist" onclick="removeBlocklist()" class="tool-item"><i class="fa-solid fa-list-check"></i></button>
-  </div>
-  <button id="toolbox-btn"><i id="toolbox-icon" class="fa-solid fa-caret-left"></i></button>
-
-
-</div>
-
-
-<script>
-function toolboxStart() {
-  const toolbox = document.getElementById("toolbox");
-  const toolboxIcon = document.getElementById("toolbox-icon");
-  const toolboxContent = document.getElementById("toolbox-content");
-  const toolboxButton = document.getElementById("toolbox-btn");
-
-  let dragging = false;
-  let moved = false;
-  let startX = 0;
-  let startY = 0;
-  let offsetY = 0;
-  let toolboxIsOpen = !toolboxContent.hidden;
-  let toolboxOnLeft = false;
-
-  toolbox.style.position = "fixed";
-  toolbox.style.right = "0";
-  toolbox.style.top = "50%";
-  toolbox.style.transform = "translateY(-50%)";
-  toolbox.style.cursor = "grab";
-  toolbox.style.touchAction = "none";
-  toolbox.style.display = "flex";
-  toolbox.style.alignItems = "center";
-  toolbox.style.flexDirection = "row-reverse";
-
-  function updateToolboxIcon() {
-    if (toolboxOnLeft) {
-      toolboxIcon.className = toolboxIsOpen
-        ? "fa-solid fa-caret-left"
-        : "fa-solid fa-caret-right";
-    } else {
-      toolboxIcon.className = toolboxIsOpen
-        ? "fa-solid fa-caret-right"
-        : "fa-solid fa-caret-left";
-    }
-  }
-
-  toolbox.addEventListener("pointerdown", e => {
-    dragging = true;
-    moved = false;
-
-    startX = e.clientX;
-    startY = e.clientY;
-
-    const rect = toolbox.getBoundingClientRect();
-    offsetY = e.clientY - rect.top;
-
-    toolbox.style.cursor = "grabbing";
-    toolbox.style.transform = "none";
-
-    e.preventDefault();
-  });
-
-  document.addEventListener("pointermove", e => {
-    if (!dragging) return;
-
-    if (
-      Math.abs(e.clientX - startX) > 5 ||
-      Math.abs(e.clientY - startY) > 5
-    ) {
-      moved = true;
-    }
-
-    const maxY = window.innerHeight - toolbox.offsetHeight;
-    const y = Math.max(
-      0,
-      Math.min(e.clientY - offsetY, maxY)
-    );
-
-    toolbox.style.top = `${y}px`;
-
-    if (e.clientX < window.innerWidth / 2) {
-      toolbox.style.left = "0";
-      toolbox.style.right = "auto";
-      toolbox.style.flexDirection = "row";
-      toolboxOnLeft = true;
-    } else {
-      toolbox.style.left = "auto";
-      toolbox.style.right = "0";
-      toolbox.style.flexDirection = "row-reverse";
-      toolboxOnLeft = false;
-    }
-
-    updateToolboxIcon();
-  });
-
-  document.addEventListener("pointerup", () => {
-    if (!dragging) return;
-
-    dragging = false;
-    toolbox.style.cursor = "grab";
-  });
-
-  document.addEventListener("pointercancel", () => {
-    dragging = false;
-    toolbox.style.cursor = "grab";
-  });
-
-  toolboxButton.addEventListener("click", e => {
-    if (moved) {
-      moved = false;
-      return;
-    }
-
-    toolboxIsOpen = !toolboxIsOpen;
-    toolboxContent.hidden = !toolboxIsOpen;
-
-    updateToolboxIcon();
-  });
-
-  updateToolboxIcon();
-}
-
-toolboxStart();
-</script>
-  
-<script>
-  function startElementRemover() {
-  let active = true;
-  let highlighted = null;
-
-  function highlight(element) {
-    if (!active) return;
-    if (element === document.body || element === document.documentElement) return;
-
-    if (highlighted && highlighted !== element) {
-      highlighted.style.outline = highlighted.dataset.originalOutline || "";
-    }
-
-    if (highlighted !== element) {
-      highlighted = element;
-      highlighted.dataset.originalOutline = element.style.outline || "";
-      element.style.outline = "2px solid red";
-    }
-  }
-
-  function mouseMove(event) {
-    if (!active) return;
-
-    const element = document.elementFromPoint(
-      event.clientX,
-      event.clientY
-    );
-
-    highlight(element);
-  }
-
-  function click(event) {
-    if (!active) return;
-
-    event.preventDefault();
-    event.stopPropagation();
-    event.stopImmediatePropagation();
-
-    const element = document.elementFromPoint(
-      event.clientX,
-      event.clientY
-    );
-
-    if (
-      !element ||
-      element === document.body ||
-      element === document.documentElement
-    ) {
-      return;
-    }
-
-    element.remove();
-
-    active = false;
-
-    document.removeEventListener("mousemove", mouseMove, true);
-    document.removeEventListener("click", click, true);
-
-    if (highlighted) {
-      highlighted.style.outline = highlighted.dataset.originalOutline || "";
-      delete highlighted.dataset.originalOutline;
-    }
-
-    highlighted = null;
-  }
-
-  document.addEventListener("mousemove", mouseMove, true);
-  document.addEventListener("click", click, true);
-}
-
-
-</script>
-
-<script>
-  function removeBlocklist() {
-    //remove elements by id
- const blocklist = [
-  "tpScreenLockCover",
-  "__blocksi_iframe_blocked__"
-];
-
-blocklist.forEach(id => {
-  const element = document.getElementById(id);
-
-  if (element) {
-    element.remove();
-  }
-}); 
-    //remove images
-
-  const imageSrcBlocklist = [
-  "images/icons/blocked_content/youtube-denied.png",
-  "images/icons/blocked_content/iframe-denied.png",
-  "https://storage.googleapis.com/custom_extension_pages_files/",
-  "https://storage.googleapis.com/blocksi_files/gamingdisabled.png",
-  "iframe-denied.png"
-];
-
-document.querySelectorAll("img").forEach(img => {
-  if (imageSrcBlocklist.some(src => img.src.includes(src))) {
-    img.remove();
-  }
-});
-    
-  }
-</script>
-
-
-<script>
-  const element = document.querySelector("#toolbox");
-
-const TBobserver = new MutationObserver(() => {
-  if (!document.contains(element)) {
-    toolboxStart();
-    TBobserver.disconnect();
-  }
-});
-
-TBobserver.observe(document.body, {
-  childList: true,
-  subtree: true
-});
-</script>
-
-
-
-
-
-
-
-
-
-
-
-  <script>
-window.addEventListener("load", () => {
-  document.querySelector("#toolbox")?.remove();
-
-  document.body.insertAdjacentHTML("beforeend", `
-    <div id="toolbox">
-      <div id="toolbox-content" hidden>
-        <b>toolbox</b><br>
-        <button title="about:blank" onclick="toolboxAboutBlank()" class="tool-item"><i class="fa-solid fa-school-circle-xmark"></i></button>
-        <button title="tab cloak" onclick="tempTabCloak()" class="tool-item"><i class="fa-solid fa-computer"></i></button>
-        <button title="panic button" onclick="toolboxRedirect()" class="tool-item"><i class="fa-solid fa-circle-exclamation"></i></button>
-        <hr>
-        <button title="phantom refresh" onclick='(async()=>{try{const res=await fetch(location.href);const text=await res.text();const doc=new DOMParser().parseFromString(text,"text/html");document.head.innerHTML=doc.head.innerHTML;document.body.innerHTML=doc.body.innerHTML;console.log("page reset");}catch(e){console.error(e);}})(); setTimeout(() => { toolboxStart(); loadSplash(); initBattery(); fps(); particlesStart(); }, 400);' class="tool-item"><i class="fa-solid fa-arrow-rotate-left"></i></button>
-        <button title="remove element" onclick="startElementRemover();" class="tool-item"><i class="fa-solid fa-trash"></i></button>
-        <button title="remove from blacklist" onclick="removeBlocklist()" class="tool-item"><i class="fa-solid fa-list-check"></i></button>
-      </div>
-      <button id="toolbox-btn"><i id="toolbox-icon" class="fa-solid fa-caret-left"></i></button>
-    </div>
-  `);
-});
-  </script>
-
-
 </body>
-</html>     
+</html>
